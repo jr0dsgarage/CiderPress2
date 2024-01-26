@@ -644,6 +644,7 @@ limitations under the License.
                                             CanExecute="CanDeleteFiles" Executed="DeleteFilesCmd_Executed"/>
                         </DataGrid.CommandBindings>
                         <!-- If the columns change, update the custom sort function in FileListItem. -->
+                        
                         <DataGrid.Columns>
                             <DataGridTemplateColumn Header="?" Width="SizeToCells">
                                 <DataGridTemplateColumn.CellTemplate>
@@ -692,7 +693,6 @@ limitations under the License.
                                 <MenuItem Command="{StaticResource ExtractFilesCmd}"/>
                                 <MenuItem Command="{StaticResource ExportFilesCmd}"/>
                                 <MenuItem Command="Copy"/>
-                                <MenuItem Command="Paste"/>
                                 <MenuItem Command="{StaticResource DeleteFilesCmd}"/>
                                 <MenuItem Command="{StaticResource TestFilesCmd}"/>
                                 <Separator/>
